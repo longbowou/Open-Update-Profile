@@ -83,7 +83,7 @@ export const handler = async (event) => {
                 'Access-Control-Allow-Headers': 'Content-Type',
             },
             body: JSON.stringify({
-                error: [],
+                errors: [],
                 user
             }),
         };
