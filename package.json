@@ -7,5 +7,6 @@
     "run": "node index.mjs"
   },
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.675.0"
   }
 }

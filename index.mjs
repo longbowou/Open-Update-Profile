@@ -1,8 +1,8 @@
 import {DynamoDBClient, ScanCommand, UpdateItemCommand} from "@aws-sdk/client-dynamodb";
 
-const region = 'us-east-2'
+const region = process.env.AWS_REGION;
 
-const DYNAMO_TABLE_NAME = 'ProjectOpen';
+const DYNAMO_TABLE_NAME = process.env.DYNAMO_TABLE_NAME;
 
 const dynamoDbClient = new DynamoDBClient({region});
 
